@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('canguro.jpg');
+    background-position: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+  }
+  
+  .social {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .social:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Colores específicos para cada red social */
+  .Ws { background-color: #00d712; }
+
+  
+  /* Adaptabilidad para dispositivos */
+  @media (min-width: 600px) {
+    .social-links {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
